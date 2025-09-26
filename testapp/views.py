@@ -4,6 +4,6 @@ from .models import Mensaje
 from datetime import datetime
 
 def mostrar_mensaje(request):
-    ahora = datetime.now().strftime("%H:%M:%S")
-    return HttpResponse(f"<h1>Hora actual: {ahora}</h1><p>Esta es la rama de prueba hora.</p>")
+    return HttpResponse("<h1>Mensaje desde rama B</h1>")
+
 # Create your views here.
