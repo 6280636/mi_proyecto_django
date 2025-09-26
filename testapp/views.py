@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from .models import Mensaje
 from datetime import datetime
 
-def mostrar_mensaje(request):
-    return HttpResponse("<h1>Mensaje desde rama B</h1>")
 
-# Create your views here.
+def mostrar_mensaje(request):
+    return HttpResponse("<h1>Mensaje combinado: A + B</h1>")
+
